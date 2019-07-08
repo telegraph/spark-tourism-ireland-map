@@ -1,0 +1,20 @@
+.carousel__slider {
+min-height: 100vh;
+max-height: 100vh;
+overflow-y: scroll;
+
+  .slide {
+    min-height: 100vh;
+    position: absolute;
+    transition: transform 0.3s;
+    transform: translateX(-100%);
+    max-width: 400px;
+
+    &.slide--active {
+      transform: translateX(0%);
+    }
+    &.after {
+      transform: translateX(100%);
+    }
+  }
+}
