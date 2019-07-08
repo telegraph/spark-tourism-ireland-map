@@ -7,7 +7,8 @@ import './App.scss';
 
 function App() {
   const [data, setData] = useState(DummyData);
-  const [activePoint, setActivePoint] = useState(0);
+  const [activePoint, setActivePoint] = useState(-1);
+  const [isNavVisible, setNavVisible] = useState(false);
 
   const activePointSetter = (index) => {
     setActivePoint(index);
@@ -30,18 +31,34 @@ function App() {
 
   const toggleActive = (direction, e) => {
     e.preventDefault();
-
-
-    if (activePoint >= 0 && activePoint < data.length) {
+    if (activePoint >= -1 && activePoint < data.length) {
       setActivePoint((activePoint) => direction === "back" ? activePoint - 1 : activePoint + 1);
     }
   }
 
+  useEffect(() => {
+    if (activePoint != -1) {
+      setNavVisible(true);
+    } else {
+      setNavVisible(false);
+    }
+  }, [activePoint]);
+
   return (
     <div className="container">
       <Header />
-      <Carousel data={data} activePoint={activePoint} toggleActive={toggleActive} />
-      <MapContainer data={data} activePoint={activePoint} activePointSetter={activePointSetter} />
+      <Carousel 
+        data={data}
+        activePoint={activePoint}
+        toggleActive={toggleActive}
+        activePointSetter={activePointSetter}
+        isNavVisible={isNavVisible}
+      />
+      <MapContainer 
+        data={data}
+        activePoint={activePoint}
+        activePointSetter={activePointSetter}
+      />
     </div>
   );
 }

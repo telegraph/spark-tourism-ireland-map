@@ -1,6 +1,15 @@
 .container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+
+  p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
 }

@@ -2,7 +2,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   .controls__progress {
+    p {
+      color: #fff;
+    }
+  }
+  &--hidden {
+    display: none;
+  }
+
+  button {
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+
+    img, p {
+      display: inline-block;
+    }
+    
+    img {
+      vertical-align: text-bottom;
+    }
+
+    p {
+      margin: 0 5px;
+    }
+
+    .back {
+
+    }
+
+    .next {
+      transform: rotate(180deg);
+    }
+
 
   }
+
 }

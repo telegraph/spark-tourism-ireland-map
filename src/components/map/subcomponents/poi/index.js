@@ -1,20 +1,7 @@
 import React, {useState} from 'react';
 import {Layer, Feature, Popup} from 'react-mapbox-gl';
-import greenMarker from '../../../../assets/location-green.svg';
 import './style.scss';
 
-const greenMarkerIcon = new Image(52, 47.2);
-greenMarkerIcon.src = greenMarker;
-const locationIcon = ['festivalPin', greenMarkerIcon];
-
-// Define layout to use in Layer component
-const festivalsLayout = {
-  'icon-image': 'festivalPin',
-  'icon-size': 0.5,
-  'icon-allow-overlap': true,
-  'icon-ignore-placement': true,
-  'icon-anchor': 'bottom'
-};
 
 export default function Poi({ poi, activePointSetter, activePoint}) {
 
@@ -24,7 +11,7 @@ export default function Poi({ poi, activePointSetter, activePoint}) {
     <>
       <Layer
         type="symbol"
-        layout={{"icon-image": "harbor-15"}}
+        layout={{"icon-image": "marker-15"}}
       >
         {poi.map((point, i) => (
           <Feature

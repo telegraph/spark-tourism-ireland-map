@@ -1,5 +1,12 @@
 .carousel {
+  position: relative;
   background: #EFF0EF;
   width: 400px;
   height: 100%;
+  max-height: calc(100% - 60px);
+
+  &__controls {
+    background: #461F77;
+  }
+
 }

@@ -13,14 +13,19 @@ export default function MapContainer({ data, activePoint, activePointSetter }) {
   const [centerCord, setCenterCord] = useState({lon: '-7.77832031', lat: '53.2734'});
   
   useEffect(() => {
-    setCenterCord({lon: `${data[activePoint].long}`, lat: `${data[activePoint].lat}`});
+    if(activePoint === -1) {
+      setCenterCord({lon: '-7.77832031', lat: '53.2734'});
+    } else {
+      setCenterCord({lon: `${data[activePoint].long}`, lat: `${data[activePoint].lat}`});
+    }
   }, [activePoint]);
 
 
   return (
     <div className="map">
+      <span className={`map__prompt ${activePoint !== -1 ? 'hidden' : ''}`}>Select a map pin below</span>
       <Map
-        style="mapbox://styles/mapbox/streets-v11"
+        style="mapbox://styles/sparkdigitaldesign/cinrc6fmy00ckc7m5v3ktd8v4"
         containerStyle={{
           height: "100%",
           width: "100%"

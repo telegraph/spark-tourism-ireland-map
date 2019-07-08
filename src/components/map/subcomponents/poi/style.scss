@@ -6,9 +6,12 @@
   .mapboxgl-popup-content {
     background: #461F77;
     border-radius: 0;
+    padding: 12px 20px;
 
     p {
       color: #fff;
+      margin: 0;
+      font-size: 13px;
     }
   }
 }
