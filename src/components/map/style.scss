@@ -3,6 +3,12 @@
   width: calc(100% - 400px);
   height: 100%;
 
+  &--first-slide {
+    @media (max-width: 730px) {
+      display: none;
+    }
+  }
+
   &__prompt {
     position: absolute;
     z-index: 1;

@@ -24,7 +24,7 @@ export default function MapContainer({ data, activePoint, activePointSetter, tog
 
 
   return (
-    <div className="map">
+    <div className={`map ${activePoint === -1 ? 'map--first-slide' : ''}`}>
       <span className={`map__prompt ${activePoint !== -1 ? 'hidden' : ''}`}>Select a map pin below</span>
       <button
         className="map__button map__button--menu"

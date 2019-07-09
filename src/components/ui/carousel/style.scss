@@ -5,6 +5,13 @@
   height: 100%;
   max-height: calc(100% - 60px);
 
+  &--first-slide {
+    @media (max-width: 730px) {
+      height: 100vh!important;
+      max-height: 100vh;
+    }
+  }
+
   @media (max-width: 730px) {
     width: 100%;
     height: calc(67% - 54px);
