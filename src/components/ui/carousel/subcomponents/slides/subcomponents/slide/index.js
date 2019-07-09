@@ -1,6 +1,7 @@
 import React from 'react';
+import gallery from '../../../../../../../assets/ui/gallery.svg';
 
-export default function slide({ name, address, description, golfer, index, activePoint }) {
+export default function slide({ name, address, description, golfer, index, activePoint, toggleGallery }) {
   return (
     <div className={`slide ${activePoint === index ? 'slide--active' : ''}${activePoint < index ? 'after' : ''} ${golfer === 'leona' ? 'leona' : 'padraig'}`}>
       <div className="slide__img">
@@ -10,6 +11,12 @@ export default function slide({ name, address, description, golfer, index, activ
         />
       </div>
       <section className="slide__content">
+        <button 
+          className="map__button map__button--gallery"
+          onClick={() => {toggleGallery()}}
+        >
+          <img src={gallery} alt="gallery" />
+        </button>
         <h2>
           {name}
         </h2>

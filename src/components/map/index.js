@@ -11,7 +11,7 @@ const Map = ReactMapboxGl({
 
 
 
-export default function MapContainer({ data, activePoint, activePointSetter }) {
+export default function MapContainer({ data, activePoint, activePointSetter, toggleMobileNav }) {
   const [centerCord, setCenterCord] = useState({lon: '-7.77832031', lat: '53.2734'});
   
   useEffect(() => {
@@ -26,8 +26,11 @@ export default function MapContainer({ data, activePoint, activePointSetter }) {
   return (
     <div className="map">
       <span className={`map__prompt ${activePoint !== -1 ? 'hidden' : ''}`}>Select a map pin below</span>
-      <button className="map__button map__button--share"><img src={hamburger} alt="menu" /></button>
-      <button className="map__button map__button--menu"><img src={shareIcon} alt="share" /></button>
+      <button
+        className="map__button map__button--menu"
+        onClick={() => toggleMobileNav()}
+        ><img src={hamburger} alt="menu" /></button>
+      <button className="map__button map__button--share"><img src={shareIcon} alt="share" /></button>
       <Map
         style="mapbox://styles/sparkdigitaldesign/cjxuni5kp0g901crv3a81b3db"
         containerStyle={{

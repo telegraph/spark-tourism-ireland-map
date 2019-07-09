@@ -1,0 +1,8 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>gallery</title>
+  <g>
+    <path d="M2,3,1,4V16l1,1H14l1-1V4L14,3ZM14,14.5l-2-2-1,1L12.5,15H14v1H2V15h9.5l-5-5L2,14.5V4H14Z" transform="translate(-1 -1)" style="fill: #fff"/>
+    <polygon points="16 1 15 0 3 0 2 1 15 1 15 14 16 13 16 1" style="fill: #fff"/>
+    <circle cx="5.5" cy="5" r="1" style="fill: #fff"/>
+  </g>
+</svg>

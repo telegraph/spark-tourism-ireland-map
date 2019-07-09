@@ -31,7 +31,10 @@ export default function Poi({ poi, activePointSetter, activePoint}) {
       {poi.map((marker, i) => (
           <Popup
             coordinates={[marker.long, marker.lat]}
-            style={{opacity: `${(hovered === i) || (activePoint === i) ? 1 : 0 }`}}
+            style={{
+              opacity: `${(hovered === i) || (activePoint === i) ? 1 : 0 }`,
+              top: `${(hovered === i) || (activePoint === i) ? '0px' : '5px'}`
+            }}
           >
             <p>{marker.name}</p>
           </Popup>

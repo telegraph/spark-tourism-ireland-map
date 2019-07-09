@@ -1,5 +1,5 @@
 .mapboxgl-popup {
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, top 0.3s;
   .mapboxgl-popup-tip {
     border-top-color: #461F77!important; // override base style
   }
