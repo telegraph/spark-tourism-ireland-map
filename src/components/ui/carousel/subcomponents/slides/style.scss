@@ -8,7 +8,7 @@ overflow-y: scroll;
     position: absolute;
     background: #EFEFEF;
     transition: transform 0.3s;
-    transform: translateX(-100%);
+    transform: translate3d(-100%, 0, 0);
     max-width: 400px;
 
     &__content {
@@ -36,6 +36,9 @@ overflow-y: scroll;
 
     &__img {
       position: relative;
+      @media (max-width: 730px) {
+        display: none;
+      }
     }
 
     &.leona {
@@ -48,9 +51,10 @@ overflow-y: scroll;
           height: 100px;
           border-radius: 100%;
           position: absolute;
-          bottom: -43px;
+          bottom: -50px;
           right: 40px;
           z-index: 1;
+          border: 3px solid #efefef;
         }
       }
     }
@@ -65,18 +69,19 @@ overflow-y: scroll;
           height: 100px;
           border-radius: 100%;
           position: absolute;
-          bottom: -43px;
+          bottom: -50px;
           right: 40px;
           z-index: 1;
+          border: 3px solid #efefef;
         }
       }
     }
 
     &.slide--active {
-      transform: translateX(0%);
+      transform: translate3d(0%, 0, 0);
     }
     &.after {
-      transform: translateX(100%);
+      transform: translate3d(100%, 0, 0);
     }
   }
 }

@@ -5,13 +5,17 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+  opacity: 1;
+  transform: translate3d(0, 0%, 0);
+  transition: all 0.3s;
   .controls__progress {
     p {
       color: #fff;
     }
   }
   &--hidden {
-    display: none;
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
   }
 
   button {
@@ -29,7 +33,7 @@
     }
 
     p {
-      margin: 0 5px;
+      margin: 0 8px;
     }
 
     .back {
@@ -43,4 +47,7 @@
 
   }
 
+  @media (max-width: 730px) {
+    position: fixed;
+  }
 }

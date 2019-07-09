@@ -5,6 +5,14 @@
   height: 100%;
   max-height: calc(100% - 60px);
 
+  @media (max-width: 730px) {
+    width: 100%;
+    height: calc(67% - 54px);
+    order: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
   &__controls {
     background: #461F77;
   }

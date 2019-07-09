@@ -21,4 +21,28 @@
     opacity: 0;
   }
 
+  &__button {
+    cursor: pointer;
+    position: absolute;
+    background: #009A66;
+    z-index: 1;
+    border: none;
+    padding: 8px 9px;
+
+    &--share {
+      left: 20px;
+      top: 20px;
+    }
+
+    &--menu {
+      right: 20px;
+      top: 20px;
+    }
+  }
+
+  @media (max-width: 730px) {
+    height: 33%;
+    width: 100%;
+  }
+
 }
