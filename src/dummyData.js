@@ -133,5 +133,142 @@ export const DummyData = [
     long: -9.6731315,
     golfer: 'leona',
     image: 'ballybunion.jpg'
+  },
+
+  // Padraig Harrington's
+  {
+    name: 'Royal Portrush',
+    location: 'Co Antrim',
+    description: 'This is definitely my favourite links course in the world. A great challenge and one that is always exciting to play. Portrush always gives you something for a good shot too. Play a hole well and you can make a birdie, but play it badly and a double bogey can scar your card. It is a course that always provides great drama and the club is one of the most welcoming anywhere. I know I’m not alone in looking forward to the 148th Open Championship, which returns there this year for the first time since 1951.',
+    lat: 55.1996905,
+    long: -6.6376315,
+    golfer: 'padraig',
+    image: 'royal_portrush.jpg'
+  },
+  {
+    name: 'Royal County Down',
+    location: 'Newcastle',
+    description: 'This is without doubt one of the toughest links courses in the world. It is a “must play” because you have to have an opinion on it, whether you love it or hate it or anything in  between. After the first hole, a relatively forgiving par-five, Royal County Down gives you nothing you haven’t earned. Especially in a wind, this is a beast of a golf course in the nicest sense of the word, with many exceptionally difficult – and often blind – tee shots. All in all, it is a great challenge, set amid some of the most spectacular scenery you will find anywhere. I can see why Golf Digest voted it its No 1 course in the world.',
+    lat: 54.2179406,
+    long: -5.8853815,
+    golfer: 'padraig',
+    image: 'royal_county_down.jpg'
+  },
+  {
+    name: 'Portstewart',
+    location: 'Co Londonderry',
+    description: 'Home to the Irish Open as recently as 2017, this is simply a wonderful links. The front nine especially is particularly stunning, with many of the holes cut through sand dunes. No matter what the weather is doing, it is always enjoyable there, always playable. I feel sure I speak for every golfer, when I say it is a pleasure to play. Although slightly less renowned than the likes of Portrush and Royal County Down, Portstewart makes up for that with the quality of the welcome you will receive. It’s an outstanding venue for golf in every respect.',
+    lat: 55.1715655,
+    long: -6.7273815,
+    golfer: 'padraig',
+    image: 'portstewart.jpg'
+  },
+  {
+    name: 'Waterville',
+    location: 'Co Kerry',
+    description: 'This is quite simply a great, traditional links, one that is well worth the effort to get to. And, like Killarney, Waterville lives for golf. The golf and the town intertwine in so many ways. The course is the centre of everything that goes on and it seems to me that the locals feel the same way. But it is far from a pushover. This is a tough old track, a great challenge and one that will test your best game, especially when the wind blows. It might even be the toughest links in all of Ireland. Bring your A-game.',
+    lat: 51.8430658,
+    long: -10.2005065,
+    golfer: 'padraig',
+    image: 'waterville.jpg'
+  },
+  {
+    name: 'Royal Belfast',
+    location: 'Craigavad, Co Down',
+    description: 'This is one course – the oldest club on the island of Ireland – that can justifiably be called a “hidden gem”. It boasts a number of strong holes. Four of the five par-threes measure more than 175 yards in length and two of the last three are testing par-fives. I’m not sure why this lovely layout, designed by Harry Colt, does not get more recognition. Maybe the club’s inclination towards privacy has something to do with that. Whatever, it deserves to be hailed as one of Ireland’s premier inland courses, although it runs along the shore of Belfast Lough.',
+    lat: 54.6599406,
+    long: -5.7875065,
+    golfer: 'padraig',
+    image: 'royal_belfast.jpg'
+  },
+  {
+    name: 'Stackstown',
+    location: 'Rathfarnham, Dublin',
+    description: 'My home club sits high in the Dublin mountains. It’s a parkland layout with tremendous panoramic views looking down over the city and Dublin Bay that must be among the best on the island. Stackstown is an interesting and tricky enough course, with my favourite hole being the short par-four 3rd. The little stone cottage gives it character, and the blind second shot gives it its interest and difficulty. But I love the club most for the warmth of its welcome and its scenery. Then again, there is always the Harrington Room museum in the clubhouse if the weather is poor.',
+    lat: 53.2605657,
+    long: -6.2683815,
+    golfer: 'padraig',
+    image: 'stackstown.jpg'
+  },
+  {
+    name: 'Adare Manor',
+    location: 'Co Limerick',
+    description: 'This course is very close to my heart as I was involved in the recent renovations. It is now, combining the course and the clubhouse, the best resort in Europe. The conditions are immaculate, second to none. As such, this beautiful course is a joy to play, a sumptuous walk. Like Augusta National, the holes are straightforward enough for those happy to make bogeys, but very difficult if a birdie is your goal. It is fun too. You will never, ever have to search for your ball in the trees. To me, that is the ultimate goal for any course.',
+    lat: 52.5641907,
+    long: -8.7800065,
+    golfer: 'padraig',
+    image: 'adare_manor.jpg'
+  },
+  {
+    name: 'The European Club',
+    location: 'Brittas Bay, Co Wicklow',
+    description: 'Just south of Dublin, this is a great, fun links, built and owned by one of Irish golf’s great characters, Pat Ruddy. On any given day, he might change the routing of the course and the numbers of the holes, you just never know. No matter what though, the European Club is an exciting place to play, with some of the most spectacular holes in the country. One bit, so be realistic about how far back you go.',
+    lat: 52.8596907,
+    long: -6.0712565,
+    golfer: 'padraig',
+    image: 'european_club.jpg'
+  },
+  {
+    name: 'Mount Juliet',
+    location: 'Co Kilkenny',
+    description: 'Designed by the great Jack Nicklaus, this is a magnificent example of parkland golf at its best, which is why Mount Juliet has hosted the Irish Open three times and two World Golf Championships events. Everything – the course and the clubhouse – is manicured beautifully and very much in the style of an American country club. I’m hard pushed to identify the best hole or holes, such is the consistently high standard from 1st tee to 18th green. Take time to play the on- site putting course too. It’s great fun, very challenging and the perfect way to round off a day’s golf.',
+    lat: 52.5263157,
+    long: -7.1938815,
+    golfer: 'padraig',
+    image: 'mount_juliet.jpg'
+  },
+  {
+    name: 'The K Club',
+    location: 'Straffan, Co Kildare',
+    description: 'All you need to know about the Palmer Course at the K Club is that its has hosted the Irish Open, the European Open and the 2006 Ryder Cup. There’s a five-star hotel too. But the K Club is the place I go to when I am preparing to play golf on either the PGA Tour or the European Tour. It is more like a typical tournament venue than any other course in Ireland. There are so many exciting “risk-reward” holes that challenge your nerve and your swing. It is quite simply a great test of golf.',
+    lat: 53.3065657,
+    long: -6.6275065,
+    golfer: 'padraig',
+    image: 'k_club.jpg'
+  },
+  {
+    name: 'Druids Glen',
+    location: 'Newtownmountkennedy, Co Wicklow',
+    description: 'Only about 30 years old, but already a four-time host for the Irish Open, this is another of my favourite places to play. And, although relatively young in golf terms, the site has so much history. The course has a number of spectacular holes, none more so than the short 17th. It is reminiscent of the penultimate hole at Sawgrass in Florida in that it features what is virtually an island green. Elsewhere, more water and trees present the challenge that is both testing and memorable. In my experience, the atmosphere in the clubhouse is just as good too.',
+    lat: 53.0955657,
+    long: -6.0807565,
+    golfer: 'padraig',
+    image: 'druids_glen.jpg'
+  },
+  {
+    name: 'Royal Dublin',
+    location: 'Dollymount, Dublin',
+    description: 'If you are in the centre of Dublin and in the mood for some links golf, Royal Dublin is your nearest port of call. At this time of year it would be easy to leave a city office at the end of a working day and still be able to play 18 holes before dark. The course is set in Dublin Bay and provides a testing challenge. Most days, the front nine plays gently downwind. But the back nine is then tough from start to finish. Be sensible and ignore the temptation of the back tees. Enjoy yourself instead.',
+    lat: 53.3568157,
+    long: -6.1727565,
+    golfer: 'padraig',
+    image: 'royal_dublin.jpg'
+  },
+  {
+    name: 'Ballyliffin',
+    location: 'Inishowen, Co Donegal',
+    description: 'A wonderful links and host to the Irish Open in 2018 when Scotland’s Russell Knox emerged as a worthy champion. If you find yourself anywhere close to the north-west of Ireland, a journey to Ballyliffin is well worth the effort to get there. This is links golf as you imagine it to be. Humps and hollows, blind shots, lots of wind. Ballyliffin has it all and then some. Indeed, add this to your “must-play” list, especially as there are a number of other nearby courses to visit if your trip lasts a few days.',
+    lat: 55.2924405,
+    long: -7.3752565,
+    golfer: 'padraig',
+    image: 'ballyliffin.jpg'
+  },
+  {
+    name: 'Killarney',
+    location: 'Co Kerry',
+    description: 'Situated on the shores of Lough Leane, Killarney is, like so many others in Ireland, a town absolutely consumed by the game of golf. As such, the local course is very much part of a thriving community boasting any number of fine pubs and restaurants. There is a lot of tourist activity and a great atmosphere about the place. And the parkland course itself is gorgeous, both in golfing terms and scenically. If you can’t have fun and enjoy playing golf at Killarney, I’m not sure I can really help you. It is a great spot to hang out in.',
+    lat: 52.0604408,
+    long: -9.5655065,
+    golfer: 'padraig',
+    image: 'killarney.jpg'
+  },
+  {
+    name: 'Portmarnock',
+    location: 'Dublin',
+    description: 'To my mind, Portmarnock, where I often play with friends when at home, is the fairest links course in the world. That’s an unusual word when applied to seaside golf, but it is so true of this wonderful layout, one that has hosted any number of national championships, amateur and professional. The fairways are generally flat, as are most of the greens, but it remains a big, stern challenge. This is very much a “championship” course and almost every hole is a solid test of links golf.',
+    lat: 53.4071907,
+    long: -6.1260065,
+    golfer: 'padraig',
+    image: 'portmarnock.jpg'
   }
 ];
