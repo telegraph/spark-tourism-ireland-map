@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function slide({ name, address, description, golfer, index, activePoint }) {
+export default function slide({ image, name, address, description, golfer, index, activePoint }) {
   return (
     <div className={`slide ${activePoint === index ? 'slide--active' : ''}${activePoint < index ? 'after' : ''} ${golfer === 'leona' ? 'leona' : 'padraig'}`}>
       <div className="slide__img">
         <img
-          src="https://via.placeholder.com/400x200"
+          src={`${process.env.PUBLIC_URL}/courses/${image}`}
           alt={`${name}`}
         />
       </div>
