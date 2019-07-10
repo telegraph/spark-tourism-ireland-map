@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import gallery from '../../../../../../../assets/ui/gallery.svg';
 
-export default function slide({ image, name, location, description, golfer, index, activePoint, toggleGallery }) {
+export default function Slide({ image, name, location, description, golfer, index, activePoint, toggleGallery }) {
+  const slideRef = useRef(null);
+
+  useEffect(() => {
+    slideRef.current.scrollTop = 0;
+    console.log(slideRef.current.scrollTop);
+  },[activePoint])
+
   return (
-    <div className={`slide ${activePoint === index ? 'slide--active' : ''}${activePoint < index ? 'after' : ''} ${golfer === 'leona' ? 'leona' : 'padraig'}`}>
+    <div ref={slideRef} className={`slide ${activePoint === index ? 'slide--active' : ''}${activePoint < index ? 'after' : ''} ${golfer === 'leona' ? 'leona' : 'padraig'}`}>
       <div className="slide__img">
         <img
           src={`${process.env.PUBLIC_URL}/courses/${image}`}

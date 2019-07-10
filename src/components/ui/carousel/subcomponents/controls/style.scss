@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 400px;
   opacity: 1;
   transform: translate3d(0, 0%, 0);
   transition: all 0.3s;
@@ -23,6 +23,7 @@
     background: none;
     color: #fff;
     cursor: pointer;
+    padding: 0 15px;
 
     img, p {
       display: inline-block;
@@ -48,6 +49,6 @@
   }
 
   @media (max-width: 730px) {
-    position: fixed;
+    width: 100%;
   }
 }

@@ -2,6 +2,7 @@
   "name": "spark-tourism-ireland-map",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/content/dam/spark/component-assets/custom/2019/tourism-ireland/map/",
   "dependencies": {
     "mapbox-gl": "^1.1.0",
     "node-sass": "^4.12.0",

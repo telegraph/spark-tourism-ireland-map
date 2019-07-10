@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import ReactMapboxGl, { Layer, Feature, map } from 'react-mapbox-gl';
 import Poi from './subcomponents/poi';
+import Social from '../ui/social';
 import shareIcon from '../../assets/ui/share.svg';
 import hamburger from '../../assets/ui/hamburger.svg';
 import './style.scss';
@@ -13,6 +14,7 @@ const Map = ReactMapboxGl({
 
 export default function MapContainer({ data, activePoint, activePointSetter, toggleMobileNav }) {
   const [centerCord, setCenterCord] = useState({lon: '-7.77832031', lat: '53.2734'});
+  const [shareMenu, setShareMenu] = useState(false);
   
   useEffect(() => {
     if(activePoint === -1) {
@@ -30,7 +32,14 @@ export default function MapContainer({ data, activePoint, activePointSetter, tog
         className="map__button map__button--menu"
         onClick={() => toggleMobileNav()}
         ><img src={hamburger} alt="menu" /></button>
-      <button className="map__button map__button--share"><img src={shareIcon} alt="share" /></button>
+      <button
+        className="map__button map__button--share"
+        onClick={() => setShareMenu(!shareMenu ? true : false)}
+      >
+          <img src={shareIcon} alt="share" />
+      </button>
+      <Social open={shareMenu} />
+
       <Map
         style="mapbox://styles/sparkdigitaldesign/cjxuni5kp0g901crv3a81b3db"
         containerStyle={{

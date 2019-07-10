@@ -11,7 +11,7 @@ export default function Poi({ poi, activePointSetter, activePoint}) {
     <>
       <Layer
         type="symbol"
-        layout={{"icon-image": "marker-15"}}
+        layout={{"icon-image": "marker"}}
       >
         {poi.map((point, i) => (
           <Feature

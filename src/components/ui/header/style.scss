@@ -4,10 +4,26 @@ header {
   height: 60px;
 
   .telegraph-logo {
-    text-align: center;
     display: block;
     margin: 17px auto;
     width: 150px;
+
+    &--desktop {
+      text-align: center;
+      @media (max-width: 730px) {
+      display: none;
+      }
+    }
+
+    &--mobile {
+      position: absolute;
+      left: 10px;
+      bottom: -8px;
+      @media (min-width: 730px) {
+        display: none;
+      }
+    }
+
   }
 
   .sponsor-logo {

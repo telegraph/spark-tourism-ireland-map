@@ -4,6 +4,7 @@
   width: 400px;
   height: 100%;
   max-height: calc(100% - 60px);
+  overflow-x: hidden;
 
   &--first-slide {
     @media (max-width: 730px) {
