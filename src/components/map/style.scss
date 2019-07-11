@@ -9,9 +9,16 @@
     }
   }
 
+  &--hovered {
+    .mapboxgl-canvas-container {
+      cursor: pointer!important;
+    }
+  }
+
   &__prompt {
     position: absolute;
     z-index: 1;
+    font-family: "Telesans Text", sans-serif;
     font-size: 13px;
     background: #492E78;
     color: #fff;
@@ -31,7 +38,7 @@
     cursor: pointer;
     position: absolute;
     background: #009A66;
-    z-index: 1;
+    z-index: 5;
     border: none;
     padding: 8px 9px;
 

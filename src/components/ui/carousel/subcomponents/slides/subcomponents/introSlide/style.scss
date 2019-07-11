@@ -17,6 +17,7 @@
       }
 
       h1 {
+        font-family: "Austin News Deck Semibold", serif;
         font-size: 28px;
         margin-bottom: 20px;
       }
@@ -26,11 +27,13 @@
       }
 
       button {
+        font-family: "Telesans Text", sans-serif;
         cursor: pointer;
         width: 140px;
         height: 48px;
         margin-top: 20px;
         background: #461F77;
+        border: none;
         color: #fff;
         font-size: 13px;
       }

@@ -1,19 +1,27 @@
 .mobile-nav {
   position: absolute;
   background: rgba(3, 147, 95, 0.97);
-  width: calc(100vw - 40px);
+  width: 100vw;
   height: 100vh;
-  z-index: 3;
+  z-index: 7;
   color: #fff;
   padding: 20px;
   transform: translate3d(-100%, 0, 0);
   transition: all 0.3s;
+
+  h2 {
+    font-family: "Austin News Deck Semibold", serif;
+    font-size: 22px;
+    line-height: 26.4px;
+  }
 
   &--open {
   transform: translate3d(0%, 0, 0);
   }
 
   &__button {
+    border: none;
+    background: none;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -24,6 +32,7 @@
     max-height: 80vh;
     overflow-y: scroll;
     li {
+      font-family: "Austin News Deck Semibold";
       list-style: none;
       font-size: 13px;
       line-height: 14.4px;

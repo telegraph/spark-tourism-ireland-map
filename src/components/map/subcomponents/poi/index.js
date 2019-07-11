@@ -3,10 +3,10 @@ import {Layer, Feature, Popup} from 'react-mapbox-gl';
 import './style.scss';
 
 
-export default function Poi({ poi, activePointSetter, activePoint}) {
+export default function Poi({ poi, activePointSetter, activePoint, hoverHand, setHoveredCSS}) {
 
   const [hovered, setHovered] = useState(null);
-  
+
   return (
     <>
       <Layer
@@ -17,10 +17,12 @@ export default function Poi({ poi, activePointSetter, activePoint}) {
           <Feature
             coordinates={[point.long, point.lat]}
             onMouseEnter={(map, e) => {
-              setHovered(i)
+              setHovered(i);
+              // setHoveredCSS(true);
             }}
             onMouseLeave={(map, e) => {
               setHovered(null);
+              // setHoveredCSS(false);
             }}
             onClick={(map, e) => {
               activePointSetter(i)
@@ -35,6 +37,7 @@ export default function Poi({ poi, activePointSetter, activePoint}) {
               opacity: `${(hovered === i) || (activePoint === i) ? 1 : 0 }`,
               top: `${(hovered === i) || (activePoint === i) ? '0px' : '5px'}`
             }}
+            offset={[0, -25]}
           >
             <p>{marker.name}</p>
           </Popup>

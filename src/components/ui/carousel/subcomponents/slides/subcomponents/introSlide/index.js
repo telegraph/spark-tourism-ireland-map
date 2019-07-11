@@ -6,9 +6,9 @@ export default function IntroSlide({activePointSetter}) {
   return (
     <div className="slide slide--intro">
       <section className="slide__content">
-        <h1>30 of the best golf courses in Ireland</h1>
+        <h1>The best courses on the island of Ireland</h1>
         <p>
-          irish golf stars Padraig Harrington (Ryder Cup captain 2020) and Leona Maguire (two-time Curtis Cup winner) take you on a guided tour
+          Irish golf stars Padraig Harrington and Leona Maguire select some of their favourite homeland courses
         </p>
         <button
           onClick={() => activePointSetter(0)}

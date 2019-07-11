@@ -5,7 +5,7 @@
   width: 100vw;
   position: fixed;
   top: 0;
-  z-index: 4;
+  z-index: 6;
   background: #000;
   color: #fff;
 
@@ -13,9 +13,9 @@
     cursor: pointer;
     position: absolute;
     background: #009A66;
-    z-index: 1;
+    z-index: 6;
     border: none;
-    padding: 6px 9px;
+    padding: 8px 9px;
     top: 20px;
     right: 20px;
   }

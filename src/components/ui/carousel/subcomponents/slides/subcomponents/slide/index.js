@@ -2,15 +2,9 @@ import React, { useRef, useEffect } from 'react';
 import gallery from '../../../../../../../assets/ui/gallery.svg';
 
 export default function Slide({ image, name, location, description, golfer, index, activePoint, toggleGallery }) {
-  const slideRef = useRef(null);
-
-  useEffect(() => {
-    slideRef.current.scrollTop = 0;
-    console.log(slideRef.current.scrollTop);
-  },[activePoint])
 
   return (
-    <div ref={slideRef} className={`slide ${activePoint === index ? 'slide--active' : ''}${activePoint < index ? 'after' : ''} ${golfer === 'leona' ? 'leona' : 'padraig'}`}>
+    <div className={`slide ${activePoint === index ? 'slide--active' : ''}${activePoint < index ? 'after' : ''} ${golfer === 'Leona' ? 'leona' : 'padraig'}`}>
       <div className="slide__img">
         <img
           src={`${process.env.PUBLIC_URL}/courses/${image}`}
@@ -31,9 +25,7 @@ export default function Slide({ image, name, location, description, golfer, inde
           {location}
         </h3>
         <p>
-          <b>
-            {`${golfer} says:`}
-          </b>
+          {`${golfer} says:`}
         </p>
         <p>
           {description}

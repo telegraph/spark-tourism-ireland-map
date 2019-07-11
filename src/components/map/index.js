@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import ReactMapboxGl, { Layer, Feature, map } from 'react-mapbox-gl';
+import ReactMapboxGl from 'react-mapbox-gl';
 import Poi from './subcomponents/poi';
 import Social from '../ui/social';
 import shareIcon from '../../assets/ui/share.svg';
@@ -15,6 +15,7 @@ const Map = ReactMapboxGl({
 export default function MapContainer({ data, activePoint, activePointSetter, toggleMobileNav }) {
   const [centerCord, setCenterCord] = useState({lon: '-7.77832031', lat: '53.2734'});
   const [shareMenu, setShareMenu] = useState(false);
+  // const [hovered, setHovered] = useState(false);
   
   useEffect(() => {
     if(activePoint === -1) {
@@ -23,6 +24,10 @@ export default function MapContainer({ data, activePoint, activePointSetter, tog
       setCenterCord({lon: `${data[activePoint].long}`, lat: `${data[activePoint].lat}`});
     }
   }, [activePoint]);
+
+  // const setHoveredCSS = (hover) => {
+  //   setHovered(hover ? true : false);
+  // }
 
 
   return (
@@ -44,7 +49,7 @@ export default function MapContainer({ data, activePoint, activePointSetter, tog
         style="mapbox://styles/sparkdigitaldesign/cjxuni5kp0g901crv3a81b3db"
         containerStyle={{
           height: "100%",
-          width: "100%"
+          width: "100%",
         }}
         center={centerCord}
         zoom={[7.4]}
@@ -53,6 +58,7 @@ export default function MapContainer({ data, activePoint, activePointSetter, tog
         poi={data}
         activePoint={activePoint}
         activePointSetter={activePointSetter}
+        // setHoveredCSS={setHoveredCSS}
         />
       </Map>
     </div>
