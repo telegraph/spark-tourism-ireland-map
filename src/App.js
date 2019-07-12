@@ -4,6 +4,7 @@ import MapContainer from './components/map';
 import Carousel from './components/ui/carousel';
 import MobileNav from './components/ui/mobileNav';
 import { DummyData } from './dummyData';
+import analytics from './helpers/analytics';
 import './App.scss';
 
 function App() {
@@ -11,9 +12,11 @@ function App() {
   const [activePoint, setActivePoint] = useState(-1);
   const [isNavVisible, setNavVisible] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
+
   const activePointSetter = (index) => {
     setActivePoint(index);
     setMobileNav(false);
+    analytics.send('Slide changed');
   }
 
   const fetchData = () => {
@@ -49,6 +52,10 @@ function App() {
       setNavVisible(false);
     }
   }, [activePoint]);
+
+  useEffect(() => {
+    analytics.send('App Loaded');
+  },[])
 
   return (
     <div className="container">

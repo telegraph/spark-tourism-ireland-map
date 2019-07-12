@@ -1,0 +1,24 @@
+{
+   "PadraigHarrington": [
+     { "key": "Born", "value": "Dublin" },
+     { "key": "Turned Pro", "value": "1995" },
+     { "key": "Pro wins", "value": "31" },
+     { "key": "Major wins", "value": "3 The Open (2007, 2008), USPGA (2008)" },
+     { "key": "Order of Merit", "value": "1" },
+     { "key": "European Tour Golfer of the Year", "value": "2 (2007, 2008)" },
+     { "key": "PGA Tour Player of the Year", "value": "(2008)" },
+     { "key": "Ryder Cup appearances", "value": "6" },
+     { "key": "Ryder Cup wins", "value": "4" },
+     { "key": "PGA Tour Player of the Year", "value": "(2008)" },
+     { "key": "", "value": "Padraig is 2020 Ryder Cup captain" }
+   ],
+   "LeonaMaguire" : [
+     { "key": "Born", "value": "Cavan" },
+     { "key": "Turned pro", "value": "2018" },
+     { "key": "Pro wins", "value": "2" },
+     { "key": "Women’s Golf Coaches Association award", "value": "2 (2017, 2018)" },
+     { "key": "Curtis Cup appearances", "value": "3" },
+     { "key": "Curtis Cup wins", "value": "2" },
+     { "key": "", "value": "Leona holds the record for longest spell as World No 1 Amateur (2016-18)" }
+   ]
+}

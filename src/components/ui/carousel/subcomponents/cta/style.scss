@@ -1,0 +1,36 @@
+.cta-banner {
+  background: #009A66;
+  height: 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 48px;
+  width: 400px;
+  opacity: 1;
+  transform: translate3d(0, 0%, 0);
+  transition: all 0.3s;
+  text-decoration: none;
+
+  &--hidden {
+    transform: translate3d(0, 200%, 0);
+  }
+
+  p {
+    font-family: "Telesans Text Regular";
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    span {
+      font-size: 14px;
+      font-family: "Telesans Text Bold";
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 730px) {
+    width: 100%;
+  }
+
+}

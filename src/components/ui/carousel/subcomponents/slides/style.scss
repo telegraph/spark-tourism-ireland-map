@@ -23,6 +23,32 @@ overflow-y: scroll;
     &__content {
       padding: 0 30px;
 
+      .golfer-headshot {
+        position: absolute;
+        right: 40px;
+        top: 153px;
+        img {
+          width: 100px;
+          border-radius: 120px;
+          border: 3px solid #efefef;
+        }
+
+        &__button {
+          background: #461F77;
+          position: absolute;
+          right: 5px;
+          bottom: 5px;
+          width: 30px;
+          height: 30px;
+          border-radius: 20px;
+          color: white;
+          text-align: center;
+          font-size: 22px;
+          line-height: 27px;
+        }
+        cursor: pointer;
+      }
+
       h2 {
         font-family: "Austin News Deck Semibold", serif;
         font-size: 28px;
@@ -60,42 +86,6 @@ overflow-y: scroll;
 
       @media (max-width: 730px) {
         display: none;
-      }
-    }
-
-    &.leona {
-      .slide__img {
-        &:after {
-          content: '';
-          background: url('../../../../../assets/golfers/lorna.jpg');
-          background-size: contain;
-          width: 100px;
-          height: 100px;
-          border-radius: 100%;
-          position: absolute;
-          bottom: -50px;
-          right: 40px;
-          z-index: 1;
-          border: 3px solid #efefef;
-        }
-      }
-    }
-
-    &.padraig {
-      .slide__img {
-        &:after {
-          content: '';
-          background: url('../../../../../assets/golfers/padraig.jpg');
-          background-size: contain;
-          width: 100px;
-          height: 100px;
-          border-radius: 100%;
-          position: absolute;
-          bottom: -50px;
-          right: 40px;
-          z-index: 1;
-          border: 3px solid #efefef;
-        }
       }
     }
 

@@ -1,0 +1,52 @@
+  
+  .slide-out {
+    width: 400px;
+    height: calc(100vh - 260px);
+    position: fixed;
+    background: #009a66;
+    left: 400px;
+    padding: 0 25px;
+    z-index: 6;
+    top: 260px;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    /* transform: translate3d(0, 100%, 0); */
+    transition: all 0.3s;
+
+    &--closed {
+      transform: translate3d(0, 100%, 0);
+      opacity: 0;
+    }
+
+    &__button {
+      cursor: pointer;
+      position: absolute;
+      background: #009A66;
+      z-index: 6;
+      border: none;
+      padding: 8px 9px;
+      top: 20px;
+      right: 20px;
+    }
+
+    &__cv {
+      list-style: none;
+      padding: 0;
+      li {
+        font-family: "Austin News Deck Semibold";
+        font-size: 13px;
+        line-height: 22px;
+        color: #fff;
+        span {
+          font-family: "Austin News Deck Roman"
+        }
+      }
+    }
+
+    h2 {
+      font-size: 28px;
+      line-height: 33.6px;
+      color: #fff;
+    }
+
+  }
