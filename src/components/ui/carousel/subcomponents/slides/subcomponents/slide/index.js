@@ -35,9 +35,14 @@ export default function Slide({ image, name, location, description, golfer, inde
         <h3>
           {location}
         </h3>
-        <p>
-          {`${golfer} says:`}
-        </p>
+        <div className="golfer-mobile-container">
+          <img className="golfer-mobile"
+            src={golfer === 'Leona' ? leonaImg : padraigImg}
+            alt={golfer}
+            onClick={() => toggleSlideOut(golfer)}
+          />
+          <p>{`${golfer} says:`}</p>
+        </div>
         <p>
           {description}
         </p>

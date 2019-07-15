@@ -44,9 +44,17 @@
     }
 
     h2 {
+      font-family: "Austin News Deck Semibold", serif;
       font-size: 28px;
       line-height: 33.6px;
       color: #fff;
+    }
+
+    @media (max-width: 730px) {
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
     }
 
   }

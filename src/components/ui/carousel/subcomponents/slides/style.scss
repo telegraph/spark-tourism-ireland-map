@@ -47,6 +47,26 @@ overflow-y: scroll;
           line-height: 27px;
         }
         cursor: pointer;
+
+        @media (max-width: 730px) {
+          display: none;
+        }
+      }
+
+      .golfer-mobile-container {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+      }
+
+      .golfer-mobile {
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 50px;
+        margin-right: 13px;
+        @media (min-width: 730px) {
+          display: none;
+        }
       }
 
       h2 {

@@ -47,7 +47,7 @@ export const DummyData = [
   {
     name: 'Slieve Russell',
     location: 'Ballyconnell, Co Cavan',
-    description: 'Forgive my natural bias, but my home course has it all when it comes to golf. It has trees, it has water in play on a few holes, it has tricky, sloping greens, it has changes in elevation, it has some wonderful par-threes that will stick in your memory. And the par- fives are tempting enough for just about any standard of golfer. It is just a wonderful place to play, one I have appreciated more as I have spent more time away from home. I especially miss the pure putting surfaces and the par-three course. Great fun.',
+    description: 'Forgive my natural bias, but my home course has it all when it comes to golf. It has trees, it has water in play on a few holes, it has tricky, sloping greens, it has changes in elevation, it has some wonderful par-threes that will stick in your memory. And the par-fives are tempting enough for just about any standard of golfer. It is just a wonderful place to play, one I have appreciated more as I have spent more time away from home. I especially miss the pure putting surfaces and the par-three course. Great fun.',
     lat: 54.0966906,
     long: -7.5595065,
     golfer: 'Leona',
@@ -157,7 +157,7 @@ export const DummyData = [
   {
     name: 'Portstewart',
     location: 'Co Londonderry',
-    description: 'Home to the Irish Open as recently as 2017, this is simply a wonderful links. The front nine especially is particularly stunning, with many of the holes cut through sand dunes. No matter what the weather is doing, it is always enjoyable there, always playable. I feel sure I speak for every golfer, when I say it is a pleasure to play. Although slightly less renowned than the likes of Portrush and Royal County Down, Portstewart makes up for that with the quality of the welcome you will receive. It’s an outstanding venue for golf in every respect.',
+    description: 'Home to the Irish Open as recently as 2017, this is simply a wonderful links. The front nine especially is particularly stunning, with many of the holes cut through sand dunes. No matter what the weather is doing, it is always enjoyable there, always playable. I feel sure I speak for every golfer, when I say it is a pleasure to play. Although slightly less renowned than the likes of Royal Portrush and Royal County Down, Portstewart makes up for that with the quality of the welcome you will receive. It’s an outstanding venue for golf in every respect.',
     lat: 55.1715655,
     long: -6.7273815,
     golfer: 'Padraig',
@@ -193,7 +193,7 @@ export const DummyData = [
   {
     name: 'Adare Manor',
     location: 'Co Limerick',
-    description: 'This course is very close to my heart as I was involved in the recent renovations. It is now, combining the course and the clubhouse, the best resort in Europe. The conditions are immaculate, second to none. As such, this beautiful course is a joy to play, a sumptuous walk. Like Augusta National, the holes are straightforward enough for those happy to make bogeys, but very difficult if a birdie is your goal. It is fun too. You will never, ever have to search for your ball in the trees. To me, that is the ultimate goal for any course.',
+    description: 'This course is very close to my heart as I was involved in the recent renovations. It is now, combining the course and the clubhouse, the best resort in Europe. The conditions are immaculate, second to none. As such, this beautiful course is a joy to play, a sumptuous walk. Like Augusta National, the holes are straightforward enough for those happy to make bogeys, but very difficult if a birdie is your goal. It is fun too. You will never, ever have to search for your ball when in the trees. To me, that is the ultimate goal for any course.',
     lat: 52.5641907,
     long: -8.7800065,
     golfer: 'Padraig',
@@ -211,7 +211,7 @@ export const DummyData = [
   {
     name: 'Mount Juliet',
     location: 'Co Kilkenny',
-    description: 'Designed by the great Jack Nicklaus, this is a magnificent example of parkland golf at its best, which is why Mount Juliet has hosted the Irish Open three times and two World Golf Championships events. Everything – the course and the clubhouse – is manicured beautifully and very much in the style of an American country club. I’m hard pushed to identify the best hole or holes, such is the consistently high standard from 1st tee to 18th green. Take time to play the on- site putting course too. It’s great fun, very challenging and the perfect way to round off a day’s golf.',
+    description: 'Designed by the great Jack Nicklaus, this is a magnificent example of parkland golf at its best, which is why Mount Juliet has hosted the Irish Open three times and two World Golf Championships events. Everything – the course and the clubhouse – is manicured beautifully and very much in the style of an American country club. I’m hard pushed to identify the best hole or holes, such is the consistently high standard from 1st tee to 18th green. Take time to play the on-site putting course too. It’s great fun, very challenging and the perfect way to round off a day’s golf.',
     lat: 52.5263157,
     long: -7.1938815,
     golfer: 'Padraig',
@@ -220,7 +220,7 @@ export const DummyData = [
   {
     name: 'The K Club',
     location: 'Straffan, Co Kildare',
-    description: 'All you need to know about the Palmer Course at the K Club is that its has hosted the Irish Open, the European Open and the 2006 Ryder Cup. There’s a five-star hotel too. But the K Club is the place I go to when I am preparing to play golf on either the PGA Tour or the European Tour. It is more like a typical tournament venue than any other course in Ireland. There are so many exciting “risk-reward” holes that challenge your nerve and your swing. It is quite simply a great test of golf.',
+    description: 'All you need to know about the Palmer Course at the K Club is that it has has hosted the Irish Open, the European Open and the 2006 Ryder Cup. There’s a five-star hotel too. But the K Club is the place I go to when I am preparing to play golf on either the PGA Tour or the European Tour. It is more like a typical tournament venue than any other course in Ireland. There are so many exciting “risk-reward” holes that challenge your nerve and your swing. It is quite simply a great test of golf.',
     lat: 53.3065657,
     long: -6.6275065,
     golfer: 'Padraig',

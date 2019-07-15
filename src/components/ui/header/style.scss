@@ -30,6 +30,17 @@ header {
     position: absolute;
     right: 10px;
     bottom: 12px;
+    img {
+      max-width: 100px;
+    }
+    p {
+      position: absolute;
+      right: 109px;
+      width: 110px;
+      top: -9px;
+      color: #000;
+      font-family: "Telesans Text", serif;
+      font-size: 14px;
+    }
   }
-
 }

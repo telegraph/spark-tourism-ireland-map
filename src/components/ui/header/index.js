@@ -17,7 +17,7 @@ export default function Header() {
       </a>
       <div className="sponsor-logo">
         <a href="https://ad.doubleclick.net/ddm/clk/447050870;250916176;h" target="_blank" rel="noopener noreferrer">
-          <img src={tourismIrelandLogo} alt="Tourism Ireland" />
+         <p>Brought to you by</p><img src={tourismIrelandLogo} alt="Tourism Ireland" />
         </a>
       </div>
     </header>

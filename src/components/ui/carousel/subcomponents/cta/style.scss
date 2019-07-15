@@ -17,14 +17,15 @@
   }
 
   p {
-    font-family: "Telesans Text Regular";
-    font-size: 14px;
+    font-family: "Telesans Text"!important;
+    font-size: 14px!important;
     text-align: center;
     margin: 0 auto;
     color: #fff;
     span {
       font-size: 14px;
-      font-family: "Telesans Text Bold";
+      font-family: "Telesans Text";
+      font-weight: 500;
       color: #fff;
     }
   }
