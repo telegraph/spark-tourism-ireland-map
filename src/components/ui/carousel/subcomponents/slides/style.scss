@@ -45,8 +45,41 @@ overflow-y: scroll;
           text-align: center;
           font-size: 22px;
           line-height: 27px;
+          z-index: 8;
         }
         cursor: pointer;
+        &:after {
+          content: '';
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        &__hover {
+          opacity: 0;
+          transition: opacity 0.3s;
+          height: 94px;
+          width: 94px;
+          top: 3px;
+          left: 3px;
+          position: absolute;
+          background: rgba(1, 154, 102, 0.91);
+          z-index: 999;
+          border-radius: 50px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          font-size: 12px;
+          z-index: 7;
+          &:hover {
+            opacity: 1;
+          }
+
+        }
 
         @media (max-width: 730px) {
           display: none;

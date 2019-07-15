@@ -15,6 +15,9 @@ export default function Slide({ image, name, location, description, golfer, inde
       </div>
       <section className="slide__content">
         <div className="golfer-headshot" onClick={() => toggleSlideOut(golfer)}>
+          <div className="golfer-headshot__hover">
+            View stats
+          </div>
           <img
             src={golfer === 'Leona' ? leonaImg : padraigImg}
             alt={golfer}
