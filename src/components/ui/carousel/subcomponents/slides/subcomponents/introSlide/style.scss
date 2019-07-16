@@ -4,6 +4,13 @@
     .slide--intro {
       transform: translateX(0);
 
+      .golfers-intro {
+        img {
+          max-width: 200px;
+          cursor: pointer;
+        }
+      }
+
       .slide {
 
         &__content {

@@ -1,8 +1,9 @@
 import React from 'react';
 import './style.scss';
-import golfers from '../../../../../../../assets/golfers/golfers.jpg';
+import padraigImg from '../../../../../../../assets/golfers/padraigImg.jpg';
+import leonaImg from '../../../../../../../assets/golfers/leonaImg.jpg';
 
-export default function IntroSlide({activePointSetter}) {
+export default function IntroSlide({activePointSetter, toggleSlideOut}) {
   return (
     <div className="slide slide--intro">
       <section className="slide__content">
@@ -16,7 +17,10 @@ export default function IntroSlide({activePointSetter}) {
           Explore map
         </button>
       </section>
-      <img src={golfers} alt ="golfers" />
+      <div className="golfers-intro">
+        <img src={leonaImg} alt ="golfers" onClick={() => toggleSlideOut('Leona')} />
+        <img src={padraigImg} alt ="golfers" onClick={() => toggleSlideOut('Padraig')} />
+      </div>
     </div>
   );
 }
