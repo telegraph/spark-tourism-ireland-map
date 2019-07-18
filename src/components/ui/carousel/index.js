@@ -34,7 +34,6 @@ export default function Carousel( { data, activePoint, toggleActive, activePoint
     } else {
       // toggle it otherwise and set golfer
       setSlideOut(!slideOut ? true : false);
-      console.log('slide me dadi');
       setGolfer(golfer);
     }
   }

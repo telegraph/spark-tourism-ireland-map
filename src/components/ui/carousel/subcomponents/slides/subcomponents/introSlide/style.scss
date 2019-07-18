@@ -8,6 +8,9 @@
         img {
           max-width: 200px;
           cursor: pointer;
+          @media (max-width: 730px) {
+            max-width: 50%;
+          }
         }
       }
 

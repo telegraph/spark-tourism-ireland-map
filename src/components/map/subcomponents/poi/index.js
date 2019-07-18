@@ -11,7 +11,7 @@ export default function Poi({ poi, activePointSetter, activePoint, hoverHand, se
     <>
       <Layer
         type="symbol"
-        layout={{"icon-image": "marker"}}
+        layout={{"icon-image": "marker", "icon-allow-overlap": true, "icon-offset": [0, -20]}}
       >
         {poi.map((point, i) => (
           <Feature
@@ -37,7 +37,7 @@ export default function Poi({ poi, activePointSetter, activePoint, hoverHand, se
               opacity: `${(hovered === i) || (activePoint === i) ? 1 : 0 }`,
               top: `${(hovered === i) || (activePoint === i) ? '0px' : '5px'}`
             }}
-            offset={[0, -25]}
+            offset={[0, -45]}
           >
             <p>{marker.name}</p>
           </Popup>
